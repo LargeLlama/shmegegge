@@ -1,11 +1,8 @@
-all: server.o
-	@gcc -o shmegegge server.o
+all: main.o
+	@gcc -o shmegegge main.o
 
-server.o: server.c
-	@gcc -c server.c
-
-client.o: client.c
-	@gcc -c client.c
+main.o: main.c
+	@gcc -c main.c
 
 clean:
 	@rm *.o
